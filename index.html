@@ -14,8 +14,12 @@
 </head>
 <body>
     <nav class="flex navbarContainer">
-        <div class="header">
-            <iconify-icon icon="material-symbols:electric-car-sharp" width="24" height="24"></iconify-icon>            <h1>Electric Car Store</h1>
+        <div class="flex header">
+            <iconify-icon icon="material-symbols:electric-car-sharp" width="24" height="24"></iconify-icon>            
+            <h1>Electric Cars</h1>
+        </div>
+        <div class="navBtm">
+            <iconify-icon icon="mdi:menu" width="32" height="32"></iconify-icon>
         </div>
         <ul>
             <li><a href="#">Home</a></li>
@@ -26,21 +30,27 @@
     </nav>
     
     <main>
-        <div class="filterContainer">
-
+        <div class="flex filterContainer">
+            <p>Ordenar por:</p>
+            <select name="filter" id="filter">
+                <option value="op1">Precio</option>
+                <option value="op2">Color</option>
+                <option value="op3">Cantidad de pasajeros</option>
+                <option value="op4">Capacidad de carga</option>
+            </select>
         </div>
         <div class="principalSection">
-            <div class="flex galery">
+            <div class="flex galleryContainer">
 
             </div>
-            <div class="pagination">
+            <div class="paginationContainer">
                 <button id="prevBtn">Previous</button>
                 <span id="pageInfo">Page 1 of 10</span>
                 <button id="nextBtn">Next</button>
         </div>
     </main>
 
-    <footer class="flex footer">
+    <footer class="flex footerContainer">
         <!-- RRSS -->
         <div>
 
