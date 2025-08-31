@@ -13,6 +13,7 @@ body{
         'nav'
         'main'
         'footer';
+    min-height: 100vh;
 }
 
 .flex{
@@ -32,6 +33,7 @@ body{
 .navLinks{
     list-style: none;
     display: none;
+    color: white;
 }
 
 .header{
@@ -72,8 +74,10 @@ select{
 .galleryContainer{
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    overflow-y: auto;
 }
 
 .card{
@@ -83,10 +87,12 @@ select{
     border-radius: 10px;
     padding: 10px;
     gap: 10px;
+    width: 250px;
+    height: 350px;
 }
 .carImg{
-    width: 200px;
-    height: auto;
+    width: 100%;
+    height: ;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -94,7 +100,7 @@ select{
 .cardBtn{
     padding: 10px;
     border: none;
-    border-radius: 1px;
+    border-radius: 4px;
     background-color: #4572a7;
     color: white;
     cursor: pointer;
@@ -126,12 +132,21 @@ select{
 .footerContainer{
     justify-content: center;
     align-items: center;
-    background-color: #4572a7;
+    background-color: #274a72;
     color: white;
     padding: 10px;
     font-size: 13px;
     gap: 5px;
     grid-area: footer;
+    flex-direction: column;
+}
+.rrssContainer{
+    gap: 10px;
+}
+.rrssContainer img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
 
 /*Version Movil por defecto*/
@@ -146,10 +161,22 @@ select{
                 'footer main';
     }
     .navLinks {
-        list-style: none;
-        display: contents;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding-top: 20px;
     }
     .navBtn{
         display: none;
+    }
+    .galleryContainer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .headerContainer {
+        justify-content: center;
+        align-items: center;
+        color: white;
     }
 }
