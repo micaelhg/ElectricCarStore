@@ -14,14 +14,16 @@
 </head>
 <body>
     <nav class="flex navbarContainer">
-        <div class="flex header">
-            <iconify-icon icon="material-symbols:electric-car-sharp" width="24" height="24"></iconify-icon>            
-            <h1>Electric Cars</h1>
+        <div class="flex headerContainer">
+            <div class="flex header">
+                <iconify-icon icon="material-symbols:electric-car-sharp" width="24" height="24"></iconify-icon>
+                <h1>Electric Cars</h1>
+            </div>
+            <div class="navBtn">
+                <iconify-icon icon="mdi:menu" width="32" height="32"></iconify-icon>
+            </div>
         </div>
-        <div class="navBtm">
-            <iconify-icon icon="mdi:menu" width="32" height="32"></iconify-icon>
-        </div>
-        <ul>
+        <ul class="navLinks">
             <li><a href="#">Home</a></li>
             <li><a href="#">Cars</a></li>
             <li><a href="#">About Us</a></li>
@@ -29,7 +31,7 @@
         </ul>
     </nav>
     
-    <main>
+    <main class="mainContainer">
         <div class="flex filterContainer">
             <p>Ordenar por:</p>
             <select name="filter" id="filter">
@@ -41,12 +43,62 @@
         </div>
         <div class="principalSection">
             <div class="flex galleryContainer">
-
+                <!-- Cards -->
+                <div class="flex card">
+                    <img src="./assets/img/auto1.webp" alt="Car 1" class="carImg">
+                    <h3>Model X</h3>
+                    <button class="cardBtn">Ver más</button>
+                </div>
+                <div class="flex card">
+                    <img src="./assets/img/auto2.jpg" alt="Car 1" class="carImg">
+                    <h3>Model X</h3>
+                    <button class="cardBtn">Ver más</button>
+                </div>
+                <div class="flex card">
+                    <img src="./assets/img/auto3.jpg" alt="Car 1" class="carImg">
+                    <h3>Model X</h3>
+                    <button class="cardBtn">Ver más</button>
+                </div>
+                <div class="flex card">
+                    <img src="./assets/img/auto4.avif" alt="Car 1" class="carImg">
+                    <h3>Model X</h3>
+                    <button class="cardBtn">Ver más</button>
+                </div>
+                <div class="flex card">
+                    <img src="./assets/img/auto5.jpg" alt="Car 1" class="carImg">
+                    <h3>Model X</h3>
+                    <button class="cardBtn">Ver más</button>
+                </div>
+                <div class="flex card">
+                    <img src="./assets/img/auto6.webp" alt="Car 1" class="carImg">
+                    <h3>Model X</h3>
+                    <button class="cardBtn">Ver más</button>
+                </div>
+                <div class="flex card">
+                    <img src="./assets/img/auto7.webp" alt="Car 1" class="carImg">
+                    <h3>Model X</h3>
+                    <button class="cardBtn">Ver más</button>
+                </div>
+                <div class="flex card">
+                    <img src="./assets/img/auto8.jpg" alt="Car 1" class="carImg">
+                    <h3>Model X</h3>
+                    <button class="cardBtn">Ver más</button>
+                </div>
+                <div class="flex card">
+                    <img src="./assets/img/auto9.jpg" alt="Car 1" class="carImg">
+                    <h3>Model X</h3>
+                    <button class="cardBtn">Ver más</button>
+                </div>
             </div>
-            <div class="paginationContainer">
-                <button id="prevBtn">Previous</button>
-                <span id="pageInfo">Page 1 of 10</span>
-                <button id="nextBtn">Next</button>
+            <div class="flex paginationContainer">
+                <ul class="flex pageList">
+                    <li><button class="numberbtn"> &laquo </button> </li>
+                    <li><button class="numberbtn"> 1 </button> </li>    
+                    <li><button class="numberbtn"> 2 </button> </li>
+                    <li><button class="numberbtn"> 3 </button> </li>
+                    <li><button class="numberbtn"> &raquo </button> </li>
+                </ul>
+            </div>   
         </div>
     </main>
 
